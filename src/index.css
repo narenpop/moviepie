@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,92 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   background-color: darkorchid;
+   font-family: 'Montserrat', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.movie{
+  background-color: darkmagenta;
+  margin: 1rem;
+  width: 200px;
+  border:2px solid purple;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 3px 3px rgba(0,0,0,0.3);
+  position: relative;
+}
+.movie_container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  
+}
+.movie img{
+  max-width: 100%;
+  display: flex;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title h5{
+  padding-left: 10px;
+}
+.title h6{
+  padding-right: 4px;
+}
+.header h1{
+  text-align: center;
+  padding-left: 12px;
+  color:black;
+  
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.header img{
+  margin-top: 14px;
+  margin-right: 10px;
+}
+.overview{
+ position: absolute;
+ bottom: 0%;
+ padding: 4px;
+ background-color: blanchedalmond;
+ border:1px solid purple;
+ border-radius: 10px;
+ box-shadow: 0 0 0 rgba(0,0,0,0.3);
+ transform: translateY(100%);
+  transition: 0.3s ease;
+}
+.movie:hover .overview{
+  transform:translateY(0%);
+
+}
+.overview p{
+  font-size: 70%;
+}
+.search_bar input{
+  margin-top: 30px;
+  border: 1px solid purple;
+  border-radius: 5px;
+  background-color: purple;
+  height: 7vh;
+  margin-left: 400px;
+}
+
+.orange{
+  background-color: orange;
+  border-radius: 5px;
+}
+.green{
+  background-color: green;
+  border-radius: 5px;
 }
